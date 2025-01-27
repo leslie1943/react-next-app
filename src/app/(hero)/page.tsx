@@ -31,7 +31,8 @@ export default function Page() {
             <div className="w-75">
               <div>
                 <span>
-                  Hello, I'm <span className="text-green-300">Leslie Su</span>.
+                  Hello, I&apos;m
+                  <span className="text-green-300 pl-1">Leslie Su</span>.
                 </span>
                 <span className="pl-2">
                   I am a <span className="text-green-300 pr-1">full-stack</span>
