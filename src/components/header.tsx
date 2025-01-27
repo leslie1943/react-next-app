@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { IoMdHome } from "react-icons/io";
 
 export default function Header() {
   const links = [

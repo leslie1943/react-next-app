@@ -2,6 +2,7 @@ import React from "react";
 import homeSrc from "../../../public/home.jpg";
 import Hero from "@/components/hero";
 import { Metadata } from "next";
+import Image from "next/image";
 import { GoArrowUpRight, GoDownload } from "react-icons/go";
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiGitee } from "react-icons/si";
@@ -19,7 +20,7 @@ export default function Page() {
       <Hero imgUrl={homeSrc} altTxt="Home Image" content="">
         {/* Description */}
         <div>
-          <img
+          <Image
             className="w-12 h-12 rounded-full mx-auto"
             src="/leslie-avatar.jpg"
             alt=""
