@@ -5,9 +5,12 @@ import React from "react";
 
 export default function Header() {
   const links = [
-    { name: "Performance", href: "/performance" },
-    { name: "Reliability", href: "/reliability" },
-    { name: "Scale", href: "/scale" },
+    { name: "Skills", href: "/skills" },
+    { name: "Work Experience", href: "/experience" },
+    { name: "Projects", href: "/projects" },
+    { name: "Certificates", href: "/certificates" },
+    { name: "Contact Me", href: "/contact" },
+    // { name: "Scale", href: "/scale" },
   ];
 
   // const accessLinks = ["/", "/performance", "/reliability", "/scale"];
@@ -19,7 +22,7 @@ export default function Header() {
         <Link href={"/"} className="text-3xl font-bold">
           Home
         </Link>
-        <div className="text-xl space-x-4">
+        <div className="text-xl space-x-6">
           {links.map((link) => (
             <Link
               href={link.href}

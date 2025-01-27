@@ -6,6 +6,8 @@ interface IProps {
   imgUrl: StaticImageData;
   altTxt: string;
   content: string;
+  subContent?: string;
+  children: React.ReactNode;
 }
 
 export default function Page(props: IProps) {
@@ -24,6 +26,7 @@ export default function Page(props: IProps) {
         <div className="flex justify-center pt-48">
           <h1 className="text-white text-6xl">{props.content}</h1>
         </div>
+        {props.children}
       </div>
     </div>
   );
