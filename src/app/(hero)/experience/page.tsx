@@ -7,7 +7,7 @@ export default function Page() {
     <Hero
       imgUrl={imgSrc}
       altTxt="Reliability Image"
-      content="Reliability..."
+      content="Experience..."
     ></Hero>
   );
 }

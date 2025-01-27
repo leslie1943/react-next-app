@@ -4,10 +4,6 @@ import Hero from "@/components/hero";
 
 export default function Page() {
   return (
-    <Hero
-      imgUrl={imgSrc}
-      altTxt="Performance Image"
-      content="Performance"
-    ></Hero>
+    <Hero imgUrl={imgSrc} altTxt="Performance Image" content="Skills"></Hero>
   );
 }

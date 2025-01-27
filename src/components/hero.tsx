@@ -7,7 +7,7 @@ interface IProps {
   altTxt: string;
   content: string;
   subContent?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function Page(props: IProps) {

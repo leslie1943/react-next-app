@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { IoMdHome } from "react-icons/io";
 
 export default function Header() {
   const links = [
@@ -10,16 +11,20 @@ export default function Header() {
     { name: "Projects", href: "/projects" },
     { name: "Certificates", href: "/certificates" },
     { name: "Contact Me", href: "/contact" },
-    // { name: "Scale", href: "/scale" },
   ];
 
-  // const accessLinks = ["/", "/performance", "/reliability", "/scale"];
   const pathName = usePathname();
-  // if (!accessLinks.includes(pathName)) return null;
   return (
     <div className="absolute w-full z-10">
       <div className="flex justify-between container mx-auto text-white p-8">
-        <Link href={"/"} className="text-3xl font-bold">
+        <Link
+          href={"/"}
+          className={
+            pathName === "/"
+              ? "text-emerald-300 text-3xl font-bold"
+              : "text-3xl font-bold"
+          }
+        >
           Home
         </Link>
         <div className="text-xl space-x-6">
