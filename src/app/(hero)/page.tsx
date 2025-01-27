@@ -83,8 +83,6 @@ export default function Page() {
           <FaLinkedin className="w-6 h-6 rounded bg-black mx-4"></FaLinkedin>
         </div>
 
-        <div className="border-solid border-white w-full"> </div>
-
         <div className="flex justify-center mt-8 text-white text-xs">
           Build with Next.js & Tailwind CSS
         </div>
