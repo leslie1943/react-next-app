@@ -2,7 +2,7 @@
 import React from "react";
 import imgSrc from "../../../../public/perf.jpg";
 import Hero from "@/components/hero";
-import { Divider, List, Typography } from "antd";
+import { List, Typography } from "antd";
 
 export default function Page() {
   const data = ["Vue2.x", "Vue3.x", "React", "Next.js", "Angular"];
