@@ -2,7 +2,7 @@
 import React from "react";
 import homeSrc from "../../../public/home.jpg";
 import Hero from "@/components/hero";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Image from "next/image";
 import { GoArrowUpRight, GoDownload } from "react-icons/go";
 import { FaSquareGithub } from "react-icons/fa6";
