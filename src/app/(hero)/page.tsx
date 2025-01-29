@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import homeSrc from "../../../public/home.jpg";
 import Hero from "@/components/hero";
@@ -8,13 +9,12 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { SiGitee } from "react-icons/si";
 import { GrBlog } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
-
-export const metadata: Metadata = {
-  title: "Home",
-  description: "Leslie's Blog",
-};
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Page() {
+  const pathName = usePathname();
+
   return (
     <>
       <Hero imgUrl={homeSrc} altTxt="Home Image" content="">
@@ -24,8 +24,8 @@ export default function Page() {
             className="w-12 h-12 rounded-full mx-auto"
             src="/leslie-avatar.jpg"
             alt=""
-            width="124"
-            height="124"
+            width="120"
+            height="120"
           />
           <div className="text-white flex justify-center items-center">
             <div className="w-75">
@@ -64,15 +64,29 @@ export default function Page() {
         <div className="text-white flex items-center justify-center mt-20">
           <button className="h-10 px-6 font-semibold rounded-md bg-indigo-500 border-e-indigo-500 text-white">
             <div className="flex items-center">
-              <div>Contact Me</div>
-              <GoArrowUpRight className="ml-2" />
+              <Link
+                href="/contact"
+                className={pathName === "/contact" ? "text-yellow-500" : ""}
+              >
+                <div className="flex items-center">
+                  <div>Contact Me</div>
+                  <GoArrowUpRight className="ml-2" />
+                </div>
+              </Link>
             </div>
           </button>
 
           <button className="ml-4 pl-10 h-10 px-6 rounded-md bg-sky-400 text-white">
             <div className="flex items-center">
-              <div>Download CV</div>
-              <GoDownload className="ml-2" />
+              <a
+                href="/Web Developer-Su Zhen.docx"
+                download="Web Developer-Su Zhen"
+              >
+                <div className="flex items-center">
+                  <div>Download CV</div>
+                  <GoDownload className="ml-2" />
+                </div>
+              </a>
             </div>
           </button>
         </div>
