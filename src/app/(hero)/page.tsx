@@ -5,12 +5,10 @@ import Hero from "@/components/hero";
 // import { Metadata } from "next";
 import Image from "next/image";
 import { GoArrowUpRight, GoDownload } from "react-icons/go";
-import { FaSquareGithub } from "react-icons/fa6";
-import { SiGitee } from "react-icons/si";
-import { GrBlog } from "react-icons/gr";
-import { FaLinkedin } from "react-icons/fa";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import HomeFooterPage from "@/components/home-footer";
 
 export default function Page() {
   const pathName = usePathname();
@@ -91,17 +89,7 @@ export default function Page() {
           </button>
         </div>
 
-        {/* Links */}
-        <div className="flex justify-center mt-16 text-white">
-          <FaSquareGithub className="w-6 h-6 rounded bg-black mx-4"></FaSquareGithub>
-          <SiGitee className="w-6 h-6 rounded bg-black mx-4"></SiGitee>
-          <GrBlog className="w-6 h-6 rounded bg-black mx-4"></GrBlog>
-          <FaLinkedin className="w-6 h-6 rounded bg-black mx-4"></FaLinkedin>
-        </div>
-
-        <div className="flex justify-center mt-8 text-white text-xs">
-          Build with Next.js & Tailwind CSS
-        </div>
+        <HomeFooterPage></HomeFooterPage>
       </Hero>
     </>
   );
