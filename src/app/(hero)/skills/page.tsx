@@ -43,7 +43,7 @@ export default function Page() {
 
   return (
     <Hero imgUrl={imgSrc} altTxt="Performance Image" content="">
-      <div className="flex justify-between items-center m-8 border-solid">
+      <div className="flex justify-between items-center m-8 border-solid -mt-2">
         <Skills key={1} skills={skill_set_1}></Skills>
       </div>
 
