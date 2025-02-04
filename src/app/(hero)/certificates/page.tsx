@@ -49,7 +49,7 @@ export default function Page() {
           className="w-4/5"
           itemLayout="horizontal"
           dataSource={certs}
-          renderItem={(item, index) => (
+          renderItem={(item) => (
             <List.Item>
               <List.Item.Meta
                 avatar={item.icon}
