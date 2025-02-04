@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import imgSrc from "../../../../public/perf.jpg";
+import imgSrc from "../../../../public/skills.jpg";
 import Hero from "@/components/hero";
 import { Skills } from "@/components/skill";
 

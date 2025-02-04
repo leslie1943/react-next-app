@@ -1,5 +1,5 @@
 import React from "react";
-import imgSrc from "../../../../public/scale.jpg";
+import imgSrc from "../../../../public/projects.jpg";
 import Hero from "@/components/hero";
 
 export default function Page() {

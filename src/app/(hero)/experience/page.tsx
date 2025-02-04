@@ -1,39 +1,54 @@
 import React from "react";
-import imgSrc from "../../../../public/reliability.jpg";
+import imgSrc from "../../../../public/experience.jpg";
 import Hero from "@/components/hero";
 import { Timeline } from "antd";
 
 export default function Page() {
   const companies = [
     {
-      label: <span className="text-white text-2xl">05/2021 to 12/2024</span>,
-      color: "green",
+      label: <span className="text-white">From 05/2021 To 12/2024</span>,
 
       children: (
-        <span className="text-white text-2xl">Fidelity Investment</span>
+        <span className="text-white">
+          <strong>Fidelity Investment</strong> - (Lead Software Engineer II)
+        </span>
       ),
     },
     {
-      label: <span className="text-white text-2xl">04/2018 to 05/2021</span>,
+      label: <span className="text-white">From 04/2018 To 05/2021</span>,
       color: "pink",
       children: (
-        <span className="text-white text-2xl">Beijing Neusoft Viewhigh</span>
+        <span className="text-white">
+          <strong>Beijing Neusoft Viewhigh</strong> - (Senior Software Engineer)
+        </span>
       ),
     },
     {
-      label: <span className="text-white text-2xl">05/2021 to 04/2018</span>,
+      label: <span className="text-white">From 05/2021 To 04/2018</span>,
       color: "blue",
-      children: <span className="text-white text-2xl">IBM</span>,
+      children: (
+        <span className="text-white">
+          <strong>IBM</strong> - (Delivery Leader)
+        </span>
+      ),
     },
     {
-      label: <span className="text-white text-2xl">06/2011 to 05/2012</span>,
+      label: <span className="text-white">From 06/2011 To 05/2012</span>,
       color: "yellow",
-      children: <span className="text-white text-2xl">Beijing YSPAY</span>,
+      children: (
+        <span className="text-white">
+          <strong>Beijing YSPAY</strong> - (System Engineer)
+        </span>
+      ),
     },
     {
-      label: <span className="text-white text-2xl">09/2008 to 04/2011</span>,
+      label: <span className="text-white">From 09/2008 To 04/2011</span>,
       color: "red",
-      children: <span className="text-white text-2xl">Dalian Neusoft</span>,
+      children: (
+        <span className="text-white">
+          <strong>Dalian Neusoft</strong> - (Software Engineer)
+        </span>
+      ),
     },
   ];
   return (

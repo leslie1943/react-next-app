@@ -2,10 +2,8 @@
 import React from "react";
 import homeSrc from "../../../public/home.jpg";
 import Hero from "@/components/hero";
-// import { Metadata } from "next";
 import Image from "next/image";
 import { GoArrowUpRight, GoDownload } from "react-icons/go";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HomeFooterPage from "@/components/home-footer";
@@ -19,13 +17,13 @@ export default function Page() {
         {/* Description */}
         <div>
           <Image
-            className="w-12 h-12 rounded-full mx-auto"
+            className="w-24 h-24 rounded-full mx-auto"
             src="/leslie-avatar.jpg"
             alt=""
             width="120"
             height="120"
           />
-          <div className="text-white flex justify-center items-center">
+          <div className="text-white flex justify-center items-center mt-10">
             <div className="w-75">
               <div>
                 <span>

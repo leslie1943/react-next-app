@@ -8,7 +8,7 @@ export const Skills = (props: {
     return (
       <div
         key={item.id + "_" + item.name}
-        className={`border-2 border-solid border-white rounded-md p-6 text-white  text-center w-32 ${item.bgColor}`}
+        className={`border-2 border-solid border-white rounded-md p-8 text-white  text-center w-52 ${item.bgColor}`}
       >
         {item.name}
         <div className="flex justify-center">
