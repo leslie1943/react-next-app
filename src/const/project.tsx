@@ -197,7 +197,7 @@ export const ProjectColumns: TableColumnsType<DataType> = [
     render: (items: string[]) => {
       return (
         <div className="flex">
-          {items.map((item, index) => {
+          {items.map((item) => {
             return (
               <div key={item}>
                 <Tag key={item} className="text-white text-sm p-2">

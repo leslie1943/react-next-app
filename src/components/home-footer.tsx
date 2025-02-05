@@ -38,7 +38,7 @@ export default function HomeFooterPage() {
         </a>
       </div>
       <div className="flex justify-center mt-8 text-white text-xs">
-        Build with Next.js & Tailwind CSS
+        Build with Next.js & Tailwind CSS & Ant design 5.0
       </div>
     </>
   );
