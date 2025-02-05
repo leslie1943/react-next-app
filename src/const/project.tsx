@@ -1,5 +1,5 @@
 "use client";
-import { Tag, type TableColumnsType } from "antd";
+import { Tooltip, type TableColumnsType } from "antd";
 
 export const ProjectsData = [
   {
@@ -180,34 +180,18 @@ export interface DataType {
 }
 
 export const ProjectColumns: TableColumnsType<DataType> = [
-  // { title: "ID", dataIndex: "id", key: "key" },
-  { title: "Project Name", dataIndex: "name", key: "name" },
-  { title: "Role", dataIndex: "role", key: "role" },
+  { title: "Project Name", dataIndex: "name", key: "name", width: "20%" },
+  { title: "Role", dataIndex: "role", key: "role", width: "20%" },
   {
     title: "Project Description",
     dataIndex: "description",
     key: "description",
+    render: (text) => (
+      <Tooltip title={text} color={"blue"} key={text}>
+        {text}
+      </Tooltip>
+    ),
   },
   { title: "Company", dataIndex: "company", key: "company" },
   { title: "Time Duration", dataIndex: "time", key: "time" },
-  {
-    title: "Technologies",
-    dataIndex: "technologies",
-    key: "technologies",
-    render: (items: string[]) => {
-      return (
-        <div className="flex">
-          {items.map((item) => {
-            return (
-              <div key={item}>
-                <Tag key={item} className="text-white text-sm p-2">
-                  {item}
-                </Tag>
-              </div>
-            );
-          })}
-        </div>
-      );
-    },
-  },
 ];

@@ -2,13 +2,13 @@
 import React from "react";
 import imgSrc from "../../../../public/projects.jpg";
 import Hero from "@/components/hero";
-import { List, Table } from "antd";
+import { List, Table, Tag } from "antd";
 import { DataType, ProjectColumns, ProjectsData } from "@/const/project";
 
 export default function Page() {
   return (
     <Hero imgUrl={imgSrc} altTxt="Scale Image" content="">
-      <div className="mx-12">
+      <div className="mx-2">
         <Table<DataType>
           bordered
           pagination={{ position: ["none"] }}
@@ -16,6 +16,23 @@ export default function Page() {
           expandable={{
             expandedRowRender: (record) => (
               <div>
+                <div className="flex">
+                  {record.technologies.map((item) => {
+                    return (
+                      <div key={item}>
+                        <Tag
+                          color="#108ee9"
+                          key={item}
+                          className="text-white text-sm p-2"
+                        >
+                          {item}
+                        </Tag>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="mt-2"></div>
                 <List
                   header={
                     <div>
