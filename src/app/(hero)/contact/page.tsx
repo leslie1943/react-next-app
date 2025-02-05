@@ -45,7 +45,7 @@ const ContactDetail = () => {
             existing projects more quickly
           </li>
           <li className="mt-4">
-            I'm familiar with the product development process and have strong
+            I am familiar with the product development process and have strong
             abilities in product planning, requirement analysis, team
             <span className="text-green-400"> Collaboration</span> and
             <span className="text-green-400"> Communication</span>.
