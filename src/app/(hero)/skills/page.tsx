@@ -4,7 +4,7 @@ import imgSrc from "../../../../public/skills.jpg";
 import Hero from "@/components/hero";
 import { Skills } from "@/components/skill";
 
-const ViewOptions = (props: { emitChange: Function }) => {
+const ViewOptions = (props: { emitChange: (e: number) => void }) => {
   const [value, setValue] = useState(1);
 
   const onChange = (value: number) => {
