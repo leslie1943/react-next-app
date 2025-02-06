@@ -74,10 +74,7 @@ export default function Page() {
 
           <button className="ml-4 pl-10 h-10 px-6 rounded-md bg-sky-400 text-white">
             <div className="flex items-center">
-              <a
-                href="/Web Developer-Su Zhen.docx"
-                download="Web Developer-Su Zhen"
-              >
+              <a href="/SuZhen CV.zip" download="SuZhen CV">
                 <div className="flex items-center">
                   <div>Download CV</div>
                   <GoDownload className="ml-2" />
